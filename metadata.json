@@ -1,0 +1,6 @@
+{
+  "name": "Maison de Santé",
+  "description": "Explore the Maison de Santé menu, choose your favorite dishes, and submit an easy delivery or pickup order request. Good food, beautifully made.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

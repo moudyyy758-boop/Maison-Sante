@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Hanken Grotesk', 'DM Sans', system-ui, sans-serif;
+  }
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Delicate Bow & Botanical Dividers */
+.bow-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.bow-divider::before,
+.bow-divider::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: #9A8E89;
+  opacity: 0.35;
+}
+
+.bow-divider span {
+  margin: 0 1rem;
+}
+
+/* Scalloped edge effect */
+.scallop-border-bottom {
+  background-image: radial-gradient(circle at 10px 0, transparent 8px, currentColor 8.5px);
+  background-size: 20px 10px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  height: 10px;
+}
